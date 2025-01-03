@@ -1,12 +1,16 @@
-export default async function Home() {
-  const res = await fetch(`${process.env.BASE_API_URL}/api/companies`);
-  const companies = await res.json();
+import { Suspense } from "react";
 
+import { TrendingCompaniesSection } from "@ui/organisms";
+import Loading from "./loading";
+
+export default function Home() {
   return (
     <main>
-      <h2>Quartr</h2>
-      <p>Trending companies</p>
-      <p>{JSON.stringify(companies)}</p>
+      <h1>Quartr</h1>
+      <h2>Trending companies</h2>
+      <Suspense fallback={<Loading />}>
+        <TrendingCompaniesSection />
+      </Suspense>
     </main>
   );
 }
