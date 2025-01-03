@@ -1,8 +1,6 @@
 "use client";
 
-import { Inter } from "@next/font/google";
 import { useEffect, useState } from "react";
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [stuff1, setStuff1] = useState<any>([]);
@@ -23,8 +21,8 @@ export default function Home() {
 
   return (
     <main>
-      <h2 className={inter.className}>Quartr</h2>
-      <p className={inter.className}>Trending companies</p>
+      <h2>Quartr</h2>
+      <p>Trending companies</p>
       <p>{JSON.stringify(stuff1)}</p>
     </main>
   );
