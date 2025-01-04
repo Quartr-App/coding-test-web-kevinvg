@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 
-import { TrendingCompaniesSection } from "@ui/organisms";
+import { TrendingCompaniesListSection } from "@ui/organisms";
+import { Spacer } from "@ui/atoms";
 import Loading from "./loading";
 
 export default function Home() {
@@ -8,8 +9,9 @@ export default function Home() {
     <main>
       <h1>Quartr</h1>
       <h2>Trending companies</h2>
+      <Spacer />
       <Suspense fallback={<Loading />}>
-        <TrendingCompaniesSection />
+        <TrendingCompaniesListSection />
       </Suspense>
     </main>
   );
