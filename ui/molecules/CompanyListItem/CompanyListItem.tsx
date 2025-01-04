@@ -1,6 +1,6 @@
 import { Company } from "@core/types";
 import { getCompanyLogo } from "@core/utils";
-import { Text } from "@ui/atoms";
+import { Icon, Text } from "@ui/atoms";
 import Image from "next/image";
 import styles from "./styles.module.css";
 
@@ -28,7 +28,7 @@ export const CompanyListItem = ({ company }: CompanyListItemProps) => {
         <Text className={styles.title}>{company.companyName}</Text>
         <Text variant="caption">{company.description}</Text>
       </div>
-      <span>{">"}</span>
+      <Icon name="chevron-right" />
     </div>
   );
 };
