@@ -1,3 +1,11 @@
+:root {
+  --color-text-primary: #999999;
+  --color-text-secondary: #010101;
+  --color-bg-primary: #FFFFFF;
+  --color-border-primary: #F2F2F2;
+  --max-page-width: 1028px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -11,11 +19,18 @@ body {
 }
 
 body {
-  color: #999999;
-  background: #FFFFFF;
+  color: var(--color-text-primary);
+  background: var(--color-bg-primary);
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+h2 {
+  font-size: 16px;
+  line-height: 19.36px;
+  font-weight: 400;
+  color: var(--color-text-primary);
 }
