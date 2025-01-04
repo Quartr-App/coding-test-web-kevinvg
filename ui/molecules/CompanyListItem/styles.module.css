@@ -7,14 +7,7 @@
 }
 
 .title {
-  font-size: 14px;
-  line-height: 19.36px;
-  font-weight: 400;
   color: var(--color-text-secondary);
-}
-.subtitle {
-  font-size: 13px;
-  line-height: 16px;
 }
 
 .containerText {

@@ -1,5 +1,6 @@
 import { Company } from "@core/types";
 import { getCompanyLogo } from "@core/utils";
+import { Text } from "@ui/atoms";
 import Image from "next/image";
 import styles from "./styles.module.css";
 
@@ -24,8 +25,8 @@ export const CompanyListItem = ({ company }: CompanyListItemProps) => {
         )}
       </div>
       <div className={styles.containerText}>
-        <p className={styles.title}>{company.companyName}</p>
-        <p className={styles.subtitle}>{company.description}</p>
+        <Text className={styles.title}>{company.companyName}</Text>
+        <Text variant="caption">{company.description}</Text>
       </div>
       <span>{">"}</span>
     </div>
