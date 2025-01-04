@@ -13,7 +13,10 @@ export const CompanyListItem = ({ company }: CompanyListItemProps) => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.containerLogo}>
+      <div
+        className={styles.containerLogo}
+        style={{ backgroundColor: company.colorSettings.brandColor }}
+      >
         {logo && (
           <Image
             src={logo}
