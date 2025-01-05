@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  column-gap: 16px;
+  padding: 12px;
+  border-bottom: 1px solid var(--color-border-primary);
+}
+
+.title {
+  color: var(--color-text-secondary);
+}
+
+.containerText {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  flex: 1;
+}
+
+.containerLogo {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.logo {
+  padding: 4px;
+  object-fit: contain;
+}
